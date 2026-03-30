@@ -1,0 +1,3 @@
+D:/Image_registration/qt_viewer/build/CMakeFiles/QtTest.dir
+D:/Image_registration/qt_viewer/build/CMakeFiles/ALL_BUILD.dir
+D:/Image_registration/qt_viewer/build/CMakeFiles/ZERO_CHECK.dir

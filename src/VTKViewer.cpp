@@ -1,8 +1,20 @@
-﻿#include "VTKViewer.h"
+#include "VTKViewer.h"
 #include "Preprocess.h"
 #include "Register.h"
 
 #include <iostream>
+#include <chrono>
+
+struct ScopedTimerV {
+    const char* label;
+    std::chrono::high_resolution_clock::time_point t0;
+    ScopedTimerV(const char* l) : label(l), t0(std::chrono::high_resolution_clock::now()) {}
+    ~ScopedTimerV() {
+        auto t1 = std::chrono::high_resolution_clock::now();
+        double ms = std::chrono::duration<double, std::milli>(t1 - t0).count();
+        std::cout << "[TIMER] " << label << ": " << (int)ms << " ms\n";
+    }
+};
 #include <QResizeEvent>
 #include <QScrollBar>
 
@@ -19,203 +31,284 @@
 
 #include <opencv2/opencv.hpp>
 
+// =============================================================
+// CONSTRUCTOR — VTK/scrollbar/timer setup, then load default
+// =============================================================
 VTKViewer::VTKViewer(QWidget* parent)
     : QVTKOpenGLNativeWidget(parent)
 {
-    using ImageType = itk::Image<unsigned short, 3>;
-
-    auto dicomIO = itk::GDCMImageIO::New();
-    auto reader = itk::ImageFileReader<ImageType>::New();
-    reader->SetImageIO(dicomIO);
-    reader->SetFileName("D:/Image_registration/qt_viewer/test.dcm");
-    reader->Update();
-
-    auto itkImage = reader->GetOutput();
-    auto region = itkImage->GetLargestPossibleRegion();
-    auto size = region.GetSize();
-
-    int width = size[0];
-    int height = size[1];
-    int depth = size[2];
-
-    unsigned short* itkPtr = itkImage->GetBufferPointer();
-
-    // =============================================================
-    // STEP 1: Extract raw CV_16U frames from ITK buffer
-    // =============================================================
-    std::vector<cv::Mat> rawFrames;
-    rawFrames.reserve(depth);
-
-    for (int z = 0; z < depth; z++)
-    {
-        cv::Mat frame(height, width, CV_16U);
-        for (int y = 0; y < height; y++)
-            memcpy(frame.ptr(y),
-                itkPtr + z * width * height + y * width,
-                width * sizeof(unsigned short));
-        rawFrames.push_back(frame);
-    }
-
-    // =============================================================
-    // STEP 2: Preprocess raw → float32 [0,1]
-    //   Used for: display, registration, and DSA subtraction
-    // =============================================================
-    std::vector<cv::Mat> processedFloat;
-    preprocessSequence(rawFrames, processedFloat);
-
-    // float32 → CV_16U for PREPROCESSED viewer mode
-    std::vector<cv::Mat> processed16;
-    processed16.reserve(depth);
-    for (auto& f : processedFloat)
-    {
-        cv::Mat temp16;
-        f.convertTo(temp16, CV_16U, 65535.0);
-        processed16.push_back(temp16);
-    }
-
-    // =============================================================
-    // STEP 3: Registration
-    //   ECC computed ON preprocessed float32 frames
-    //   Warp also APPLIED TO preprocessed float32 frames
-    //   registeredFloat is float32 [0,1] — display-ready after →16U
-    //
-    //   Why not raw? Raw is dark 16-bit — ECC struggles on it AND
-    //   display would need window/level tuning. Preprocessed is
-    //   already normalized [0,1] — works directly for both.
-    // =============================================================
-    std::vector<cv::Mat> registeredFloat;
-
-    registerSequenceECC(
-        processedFloat,        // float32 [0,1]: ECC input AND warp target
-        registeredFloat,       // float32 [0,1]: warped output
-        cv::MOTION_EUCLIDEAN,
-        3);
-
-    // float32 → CV_16U for REGISTERED viewer mode
-    std::vector<cv::Mat> registered16;
-    registered16.reserve(depth);
-    for (auto& f : registeredFloat)
-    {
-        cv::Mat temp16;
-        f.convertTo(temp16, CV_16U, 65535.0);
-        registered16.push_back(temp16);
-    }
-
-    // =============================================================
-    // STEP 4: DSA
-    //   Both DSA modes operate on float32 [0,1] preprocessed frames
-    //   DSA unregistered: uses processedFloat (motion artifacts visible)
-    //   DSA registered:   uses registeredFloat (motion corrected)
-    //   Result is CV_16U: vessels dark, background white
-    // =============================================================
-    std::vector<cv::Mat> dsaUnregFrames;
-    computeDSA(processedFloat, dsaUnregFrames, 0);
-
-    std::vector<cv::Mat> dsaRegFrames;
-    computeDSA(registeredFloat, dsaRegFrames, 0);
-
-    // =============================================================
-    // STEP 5: Fill all VTK volumes
-    // =============================================================
-    auto fillVTKVolume = [&](const std::vector<cv::Mat>& frameVec)
-        -> vtkSmartPointer<vtkImageData>
-        {
-            auto vol = vtkSmartPointer<vtkImageData>::New();
-            vol->SetDimensions(width, height, depth);
-            vol->SetExtent(0, width - 1, 0, height - 1, 0, depth - 1);
-            vol->AllocateScalars(VTK_UNSIGNED_SHORT, 1);
-
-            unsigned short* ptr =
-                static_cast<unsigned short*>(vol->GetScalarPointer());
-
-            for (int z = 0; z < depth; z++)
-                for (int y = 0; y < height; y++)
-                    memcpy(ptr + z * width * height + y * width,
-                        frameVec[z].ptr(y),
-                        width * sizeof(unsigned short));
-            return vol;
-        };
-
-    rawVolume = fillVTKVolume(rawFrames);
-    processedVolume = fillVTKVolume(processed16);
-    registeredVolume = fillVTKVolume(registered16);
-    dsaRawVolume = fillVTKVolume(dsaUnregFrames);
-    dsaRegisteredVolume = fillVTKVolume(dsaRegFrames);
-
-    // =============================================================
-    // STEP 6: VTK viewer setup -- start in RAW mode
-    // =============================================================
     viewer = vtkSmartPointer<vtkImageViewer2>::New();
 
-    auto flip = vtkSmartPointer<vtkImageFlip>::New();
-    flip->SetInputData(rawVolume);
-    flip->SetFilteredAxis(1);
-    flip->Update();
-
-    viewer->SetInputConnection(flip->GetOutputPort());
-    viewer->SetRenderWindow(this->renderWindow());
-    viewer->SetupInteractor(this->interactor());
-
-    viewer->SetColorWindow(65535);
-    viewer->SetColorLevel(32767);
-
-    minSlice = 0;
-    maxSlice = depth - 1;
-    currentSlice = 0;
-
-    viewer->SetSlice(currentSlice);
-
-    auto renderer = viewer->GetRenderer();
-    auto camera = renderer->GetActiveCamera();
-    camera->ParallelProjectionOn();
-    renderer->ResetCamera();
-
-    // =============================================================
-    // SCROLLBARS
-    // =============================================================
     hScroll = new QScrollBar(Qt::Horizontal, this);
-    vScroll = new QScrollBar(Qt::Vertical, this);
-
+    vScroll = new QScrollBar(Qt::Vertical,   this);
     hScroll->hide();
     vScroll->hide();
 
     connect(hScroll, &QScrollBar::valueChanged, this, [this](int value)
         {
             auto cam = viewer->GetRenderer()->GetActiveCamera();
-            double pos[3];
-            cam->GetPosition(pos);
-            pos[0] = value;
-            cam->SetPosition(pos);
+            double pos[3]; cam->GetPosition(pos);
+            pos[0] = value; cam->SetPosition(pos);
             viewer->Render();
         });
 
     connect(vScroll, &QScrollBar::valueChanged, this, [this](int value)
         {
             auto cam = viewer->GetRenderer()->GetActiveCamera();
-            double pos[3];
-            cam->GetPosition(pos);
-            pos[1] = value;
-            cam->SetPosition(pos);
+            double pos[3]; cam->GetPosition(pos);
+            pos[1] = value; cam->SetPosition(pos);
             viewer->Render();
         });
 
-    // =============================================================
-    // PLAYBACK TIMER
-    // =============================================================
     timer = new QTimer(this);
-
     connect(timer, &QTimer::timeout, this, [this]()
         {
             currentSlice++;
-            if (currentSlice > maxSlice)
-                currentSlice = minSlice;
-
+            if (currentSlice > maxSlice) currentSlice = minSlice;
             viewer->SetSlice(currentSlice);
             viewer->Render();
             emit sliceChanged(currentSlice);
         });
 
+    loadDICOM("D:/Image_registration/qt_viewer/test.dcm");
+}
+
+// =============================================================
+// LOAD DICOM — full preprocessing pipeline
+//   Safe to call multiple times (new file or reload).
+//   Caches processedFloat for re-registration on method change.
+// =============================================================
+void VTKViewer::loadDICOM(const QString& path)
+{
+    ScopedTimerV _tTotal("TOTAL loadDICOM");
+    if (timer->isActive()) timer->stop();
+
+    auto _tRead = std::chrono::high_resolution_clock::now();
+    using ImageType = itk::Image<unsigned short, 3>;
+    auto dicomIO = itk::GDCMImageIO::New();
+    auto reader  = itk::ImageFileReader<ImageType>::New();
+    reader->SetImageIO(dicomIO);
+    reader->SetFileName(path.toStdString());
+    reader->Update();
+    std::cout << "[TIMER] DICOM read: "
+              << (int)std::chrono::duration<double,std::milli>(
+                     std::chrono::high_resolution_clock::now() - _tRead).count()
+              << " ms\n";
+
+    auto itkImage = reader->GetOutput();
+    auto sz       = itkImage->GetLargestPossibleRegion().GetSize();
+
+    imgWidth  = sz[0];
+    imgHeight = sz[1];
+    imgDepth  = sz[2];
+
+    unsigned short* itkPtr = itkImage->GetBufferPointer();
+
+    // -----------------------------------------------------------
+    // Extract raw CV_16U frames — kept for log-domain DSA
+    // -----------------------------------------------------------
+    cachedRawFrames16.clear();
+    cachedRawFrames16.reserve(imgDepth);
+    for (int z = 0; z < imgDepth; z++)
+    {
+        cv::Mat frame(imgHeight, imgWidth, CV_16U);
+        for (int y = 0; y < imgHeight; y++)
+            memcpy(frame.ptr(y),
+                   itkPtr + z * imgWidth * imgHeight + y * imgWidth,
+                   imgWidth * sizeof(unsigned short));
+        cachedRawFrames16.push_back(frame);
+    }
+
+    // -----------------------------------------------------------
+    // Preprocess → float32 [0,1] (per-frame normalised — for registration)
+    // -----------------------------------------------------------
+    {   ScopedTimerV _tp("Preprocessing");
+        preprocessSequence(cachedRawFrames16, cachedProcessedFloat);
+    }
+
+    // -----------------------------------------------------------
+    // Build log-domain frames (unnormalised — for DSA subtraction)
+    // -----------------------------------------------------------
+    buildLogFrames(cachedRawFrames16, cachedUnregisteredLog);
+
+    std::vector<cv::Mat> processed16;
+    processed16.reserve(imgDepth);
+    for (auto& f : cachedProcessedFloat)
+    {
+        cv::Mat tmp; f.convertTo(tmp, CV_16U, 65535.0);
+        processed16.push_back(tmp);
+    }
+
+    // -----------------------------------------------------------
+    // Auto-detect mask frame
+    // -----------------------------------------------------------
+    maskFrameIndex = autoDetectMaskFrame(cachedProcessedFloat);
+
+    // -----------------------------------------------------------
+    // Auto-detect body region from DICOM tag (Option C):
+    // if the user has explicitly selected a region, honour it;
+    // otherwise read the DICOM BodyPartExamined tag.
+    // -----------------------------------------------------------
+    if (selectedRegion == REGION_AUTO)
+        detectedRegion = detectRegionFromDICOM(path.toStdString());
+    else
+        detectedRegion = selectedRegion;   // explicit override
+
+    // -----------------------------------------------------------
+    // Fill fixed volumes (don't change with registration method)
+    // -----------------------------------------------------------
+    rawVolume       = makeVolume(cachedRawFrames16);
+    processedVolume = makeVolume(processed16);
+
+    // DSA unregistered — log-domain subtraction (physics-correct)
+    cv::Mat unregMask = buildLogMask(cachedUnregisteredLog, maskFrameIndex, MASK_PRECONTRAST);
+    std::vector<cv::Mat> dsaUnregFrames;
+    computeDSALogDomain(cachedUnregisteredLog, unregMask, dsaUnregFrames, dsaGain, dsaClahe, dsaBgSigma);
+    dsaRawVolume = makeVolume(dsaUnregFrames);
+
+    // -----------------------------------------------------------
+    // Registration + ECC DSA (depends on current method)
+    // -----------------------------------------------------------
+    runRegistration(currentRegMethod);
+
+    // -----------------------------------------------------------
+    // Wire VTK viewer (first load only)
+    // -----------------------------------------------------------
+    if (!viewerInitialized)
+    {
+        auto flip = vtkSmartPointer<vtkImageFlip>::New();
+        flip->SetInputData(rawVolume);
+        flip->SetFilteredAxis(1);
+        flip->Update();
+
+        viewer->SetInputConnection(flip->GetOutputPort());
+        viewer->SetRenderWindow(this->renderWindow());
+        viewer->SetupInteractor(this->interactor());
+
+        auto renderer = viewer->GetRenderer();
+        renderer->GetActiveCamera()->ParallelProjectionOn();
+        renderer->ResetCamera();
+
+        viewerInitialized = true;
+    }
+    else
+    {
+        setDisplayMode(currentMode);
+    }
+
+    viewer->SetColorWindow(65535);
+    viewer->SetColorLevel(32767);
+
+    minSlice     = 0;
+    maxSlice     = imgDepth - 1;
+    currentSlice = 0;
+    viewer->SetSlice(currentSlice);
     viewer->Render();
+}
+
+// =============================================================
+// RUN REGISTRATION — re-registers using the chosen method
+//   Only updates registeredVolume + dsaECCVolume.
+//   rawVolume / processedVolume / dsaRawVolume are unchanged.
+// =============================================================
+void VTKViewer::runRegistration(RegistrationMethod method)
+{
+    ScopedTimerV _tReg("TOTAL runRegistration");
+    // --- Stage 1 (+2): Registration on normalised frames ---
+    // Outputs: cachedRegisteredFloat (for REGISTERED display)
+    //          cachedWarpMatrices    (affine per frame)
+    //          cachedDeformFields    (displacement fields, may be empty)
+    cachedWarpMatrices.clear();
+    cachedDeformFields.clear();
+
+    BodyRegion ar = activeRegion();
+    if (ar != REGION_AUTO)
+        registerSequenceForRegion(cachedProcessedFloat, cachedRegisteredFloat,
+                                   maskFrameIndex, ar,
+                                   &cachedWarpMatrices, &cachedDeformFields);
+    else
+        registerSequence(cachedProcessedFloat, cachedRegisteredFloat,
+                          maskFrameIndex, method, &cachedWarpMatrices);
+
+    // --- Temporal smoothing of warps to eliminate frame-to-frame jitter ---
+    // Adaptive radius: half the sequence length → nearly global averaging
+    // so every frame converges to a very similar geometric transform.
+    int smoothRadius = std::max(3, imgDepth / 2);
+    if (!cachedWarpMatrices.empty())
+        temporalSmoothWarps(cachedWarpMatrices, maskFrameIndex, smoothRadius);
+    if (!cachedDeformFields.empty())
+        temporalSmoothFields(cachedDeformFields, maskFrameIndex, smoothRadius);
+
+    std::vector<cv::Mat> registered16;
+    registered16.reserve(imgDepth);
+    for (auto& f : cachedRegisteredFloat)
+    {
+        cv::Mat tmp; f.convertTo(tmp, CV_16U, 65535.0);
+        registered16.push_back(tmp);
+    }
+    registeredVolume = makeVolume(registered16);
+
+    // --- Build log-domain registered frames for DSA ---
+    // Apply the SAME warps to raw log frames (no per-frame normalisation)
+    // so that subtraction gives physically correct iodine signal.
+    if (!cachedWarpMatrices.empty())
+    {
+        buildRegisteredLogFrames(cachedRawFrames16, cachedWarpMatrices,
+                                  cachedDeformFields, cachedRegisteredLog,
+                                  maskFrameIndex);
+    }
+    else
+    {
+        // Fallback: registration method didn't output warps.
+        // Use the old normalised DSA path.
+        cachedRegisteredLog.clear();
+    }
+
+    // --- DSA on registered log frames ---
+    std::vector<cv::Mat> dsaRegFrames;
+    if (!cachedRegisteredLog.empty())
+    {
+        cv::Mat regMask = buildLogMask(cachedRegisteredLog, maskFrameIndex, dsaMaskMode);
+        computeDSALogDomain(cachedRegisteredLog, regMask, dsaRegFrames,
+                             dsaGain, dsaClahe, dsaBgSigma);
+    }
+    else
+    {
+        // Fallback to old method
+        computeDSA(cachedRegisteredFloat, dsaRegFrames, maskFrameIndex,
+                    dsaGain, dsaClahe, dsaBgSigma, dsaMaskMode);
+    }
+
+    dsaECCVolume = makeVolume(dsaRegFrames);
+}
+
+// =============================================================
+// SET REGISTRATION METHOD — re-registers in place
+// =============================================================
+void VTKViewer::setRegistrationMethod(RegistrationMethod method)
+{
+    currentRegMethod = method;
+    if (!cachedProcessedFloat.empty())
+        runRegistration(method);
+    // Caller must call setDisplayMode() after this to refresh the view
+}
+
+// =============================================================
+// MAKE VOLUME — fill vtkImageData from CV_16U frame vector
+// =============================================================
+vtkSmartPointer<vtkImageData> VTKViewer::makeVolume(const std::vector<cv::Mat>& frames)
+{
+    auto vol = vtkSmartPointer<vtkImageData>::New();
+    vol->SetDimensions(imgWidth, imgHeight, imgDepth);
+    vol->SetExtent(0, imgWidth-1, 0, imgHeight-1, 0, imgDepth-1);
+    vol->AllocateScalars(VTK_UNSIGNED_SHORT, 1);
+
+    unsigned short* ptr = static_cast<unsigned short*>(vol->GetScalarPointer());
+    for (int z = 0; z < imgDepth; z++)
+        for (int y = 0; y < imgHeight; y++)
+            memcpy(ptr + z * imgWidth * imgHeight + y * imgWidth,
+                   frames[z].ptr(y), imgWidth * sizeof(unsigned short));
+    return vol;
 }
 
 // =============================================================
@@ -223,16 +316,17 @@ VTKViewer::VTKViewer(QWidget* parent)
 // =============================================================
 void VTKViewer::setDisplayMode(DisplayMode mode)
 {
-    vtkSmartPointer<vtkImageData> src;
+    currentMode = mode;
 
+    vtkSmartPointer<vtkImageData> src;
     switch (mode)
     {
-    case RAW:            src = rawVolume;            break;
-    case PROCESSED:      src = processedVolume;      break;
-    case REGISTERED:     src = registeredVolume;     break;
-    case DSA_RAW:        src = dsaRawVolume;         break;
-    case DSA_REGISTERED: src = dsaRegisteredVolume;  break;
-    default:             src = rawVolume;            break;
+    case RAW:        src = rawVolume;        break;
+    case PROCESSED:  src = processedVolume;  break;
+    case REGISTERED: src = registeredVolume; break;
+    case DSA_RAW:    src = dsaRawVolume;     break;
+    case DSA_ECC:    src = dsaECCVolume;     break;
+    default:         src = rawVolume;        break;
     }
 
     auto flip = vtkSmartPointer<vtkImageFlip>::New();
@@ -243,10 +337,19 @@ void VTKViewer::setDisplayMode(DisplayMode mode)
     viewer->SetInputConnection(flip->GetOutputPort());
     viewer->SetSlice(currentSlice);
 
-    // Full 16-bit range for all modes -- CLAHE inside computeDSA
-    // already handled local contrast for DSA modes
-    viewer->SetColorWindow(65535);
-    viewer->SetColorLevel(32767);
+    if (mode == DSA_RAW || mode == DSA_ECC)
+    {
+        // Neutral background lands at offset=0.25 → 16383 in uint16
+        // regardless of gain (gain only moves vessel pixels, not background).
+        // Window [0, 32767]: background at mid-gray, vessels appear dark.
+        viewer->SetColorLevel(16383);
+        viewer->SetColorWindow(32767);
+    }
+    else
+    {
+        viewer->SetColorWindow(defaultWindow);
+        viewer->SetColorLevel(defaultLevel);
+    }
 
     viewer->Render();
 }
@@ -257,15 +360,13 @@ void VTKViewer::setDisplayMode(DisplayMode mode)
 void VTKViewer::resizeEvent(QResizeEvent* event)
 {
     QVTKOpenGLNativeWidget::resizeEvent(event);
-
     if (viewer)
     {
         viewer->GetRenderWindow()->SetSize(this->width(), this->height());
         viewer->Render();
     }
-
-    hScroll->setGeometry(0, height() - 20, width() - 20, 20);
-    vScroll->setGeometry(width() - 20, 0, 20, height() - 20);
+    hScroll->setGeometry(0, height()-20, width()-20, 20);
+    vScroll->setGeometry(width()-20, 0, 20, height()-20);
 }
 
 // =============================================================
@@ -274,56 +375,37 @@ void VTKViewer::resizeEvent(QResizeEvent* event)
 void VTKViewer::resetView()
 {
     auto renderer = viewer->GetRenderer();
-    auto camera = renderer->GetActiveCamera();
-
+    auto camera   = renderer->GetActiveCamera();
     renderer->ResetCamera();
     renderer->ResetCameraClippingRange();
 
     double* bounds = viewer->GetInput()->GetBounds();
-    double  w = bounds[1] - bounds[0];
-    double  h = bounds[3] - bounds[2];
-    double  maxDim = std::max(w, h);
-
-    camera->SetParallelScale(maxDim / 2.0);
+    camera->SetParallelScale(std::max(bounds[1]-bounds[0], bounds[3]-bounds[2]) / 2.0);
 
     viewer->SetColorWindow(defaultWindow);
     viewer->SetColorLevel(defaultLevel);
-
     currentSlice = minSlice;
     viewer->SetSlice(currentSlice);
-
     hScroll->hide();
     vScroll->hide();
-
     viewer->Render();
 }
 
 // =============================================================
-// SCROLLBAR VISIBILITY
+// SCROLLBARS
 // =============================================================
 void VTKViewer::updateScrollbars()
 {
-    auto   cam = viewer->GetRenderer()->GetActiveCamera();
-    double scale = cam->GetParallelScale();
-
-    if (scale < 500)
-    {
-        hScroll->show();
-        vScroll->show();
-    }
-    else
-    {
-        hScroll->hide();
-        vScroll->hide();
-    }
+    double scale = viewer->GetRenderer()->GetActiveCamera()->GetParallelScale();
+    if (scale < 500) { hScroll->show(); vScroll->show(); }
+    else             { hScroll->hide(); vScroll->hide(); }
 }
 
 // =============================================================
 // PLAYBACK
 // =============================================================
-void VTKViewer::startPlayback() { timer->start(80); }
-void VTKViewer::stopPlayback() { timer->stop(); }
-
+void VTKViewer::startPlayback()          { timer->start(80); }
+void VTKViewer::stopPlayback()           { timer->stop(); }
 void VTKViewer::setPlaybackSpeed(int ms) { timer->setInterval(ms); }
 
 // =============================================================
@@ -340,9 +422,105 @@ int VTKViewer::getMinSlice() const { return minSlice; }
 int VTKViewer::getMaxSlice() const { return maxSlice; }
 
 // =============================================================
-// RENDERER ACCESS
+// RENDERER / MASK
 // =============================================================
-vtkRenderer* VTKViewer::getRenderer()
+vtkRenderer* VTKViewer::getRenderer()    { return viewer->GetRenderer(); }
+int VTKViewer::getMaskFrameIndex() const { return maskFrameIndex; }
+
+// =============================================================
+// BODY REGION — changing region re-runs the full registration
+// with the appropriate pipeline (neuro / cardiac / abdomen /
+// peripheral).  Safe to call before or after loadDICOM.
+// =============================================================
+void VTKViewer::setBodyRegion(BodyRegion region)
 {
-    return viewer->GetRenderer();
+    selectedRegion = region;
+    if (region != REGION_AUTO)
+        detectedRegion = region;   // explicit override beats DICOM detection
+
+    if (cachedProcessedFloat.empty()) return;   // no data loaded yet
+
+    runRegistration(currentRegMethod);
+    setDisplayMode(currentMode);
+}
+
+// =============================================================
+// DSA GAIN — update live without re-running registration
+// =============================================================
+void VTKViewer::setDSAGain(float gain)
+{
+    dsaGain = gain;
+    recomputeDSAVolumes();
+    if (currentMode == DSA_RAW || currentMode == DSA_ECC)
+        setDisplayMode(currentMode);
+}
+
+// =============================================================
+// DSA CLAHE toggle — update live without re-running registration
+// =============================================================
+void VTKViewer::setDSAClahe(bool enabled)
+{
+    dsaClahe = enabled;
+    recomputeDSAVolumes();
+    if (currentMode == DSA_RAW || currentMode == DSA_ECC)
+        setDisplayMode(currentMode);
+}
+
+// =============================================================
+// BG SUPPRESSION — Gaussian high-pass sigma, live update
+// =============================================================
+void VTKViewer::setBgSuppression(float sigma)
+{
+    dsaBgSigma = sigma;
+    recomputeDSAVolumes();
+    if (currentMode == DSA_RAW || currentMode == DSA_ECC)
+        setDisplayMode(currentMode);
+}
+
+// =============================================================
+// DSA MASK MODE — pre-contrast average vs temporal median
+// =============================================================
+void VTKViewer::setDSAMaskMode(DSAMaskMode mode)
+{
+    dsaMaskMode = mode;
+    recomputeDSAVolumes();
+    if (currentMode == DSA_RAW || currentMode == DSA_ECC)
+        setDisplayMode(currentMode);
+}
+
+// =============================================================
+// Recompute both DSA volumes from cached float frames.
+// Fast — no registration, just arithmetic.  Called on
+// every gain or CLAHE toggle change.
+// =============================================================
+void VTKViewer::recomputeDSAVolumes()
+{
+    if (cachedRawFrames16.empty()) return;
+
+    // --- Unregistered DSA (log-domain) ---
+    if (!cachedUnregisteredLog.empty())
+    {
+        cv::Mat unregMask = buildLogMask(cachedUnregisteredLog, maskFrameIndex, MASK_PRECONTRAST);
+        std::vector<cv::Mat> dsaUnreg;
+        computeDSALogDomain(cachedUnregisteredLog, unregMask, dsaUnreg,
+                             dsaGain, dsaClahe, dsaBgSigma);
+        dsaRawVolume = makeVolume(dsaUnreg);
+    }
+
+    // --- Registered DSA (log-domain if warps available, else old method) ---
+    if (!cachedRegisteredLog.empty())
+    {
+        cv::Mat regMask = buildLogMask(cachedRegisteredLog, maskFrameIndex, dsaMaskMode);
+        std::vector<cv::Mat> dsaReg;
+        computeDSALogDomain(cachedRegisteredLog, regMask, dsaReg,
+                             dsaGain, dsaClahe, dsaBgSigma);
+        dsaECCVolume = makeVolume(dsaReg);
+    }
+    else if (!cachedRegisteredFloat.empty())
+    {
+        std::vector<cv::Mat> dsaReg;
+        computeDSA(cachedRegisteredFloat, dsaReg, maskFrameIndex,
+                    dsaGain, dsaClahe, dsaBgSigma, dsaMaskMode);
+        dsaECCVolume = makeVolume(dsaReg);
+    }
 }

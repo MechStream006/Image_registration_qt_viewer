@@ -6,6 +6,7 @@ class VTKViewer;
 class QPushButton;
 class QSlider;
 class QComboBox;
+class QLabel;
 
 class MainWindow : public QMainWindow
 {
@@ -13,23 +14,31 @@ public:
     MainWindow(QWidget* parent = nullptr);
 
 private:
-    // 🔥 VIEWERS
     VTKViewer* viewer1;
     VTKViewer* viewer2;
 
-    // 🔥 PLAYBACK
+    // Playback
     QPushButton* playBtn;
-    QSlider* slider;
+    QSlider*     slider;
 
-    // 🔥 TOOLBAR
+    // Toolbar — navigation
     QPushButton* openBtn;
     QPushButton* zoomInBtn;
     QPushButton* zoomOutBtn;
     QPushButton* resetBtn;
+    QComboBox*   speedBox;
 
-    QComboBox* speedBox;
+    // Toolbar — mode / region
+    QComboBox*   leftModeBox;
+    QComboBox*   rightModeBox;
+    QComboBox*   regionBox;
 
-    // 🔥 NEW (MODE CONTROL)
-    QComboBox* leftModeBox;
-    QComboBox* rightModeBox;
+    // Toolbar — DSA controls
+    QSlider*     dsaGainSlider;
+    QLabel*      dsaGainLabel;
+    QPushButton* claheBtn;
+    QComboBox*   bgSuppressBox;
+    QComboBox*   maskModeBox;
+
+    QLabel* statusLabel;
 };

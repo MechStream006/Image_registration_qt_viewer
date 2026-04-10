@@ -12,7 +12,7 @@ set(CMAKE_PREFIX_PATH "C:/Qt/6.8.2/msvc2022_64")
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # OpenCV
-set(OpenCV_DIR "C:/opencv/build")
+set(OpenCV_DIR "D:/Image_registration/dev/opencv-build/install/x64/vc17/lib")
 find_package(OpenCV REQUIRED)
 
 # OpenMP (for preprocessing)
@@ -36,8 +36,12 @@ add_executable(QtTest
     src/VTKViewer.h
     src/Preprocess.cpp
     src/Preprocess.h
-    src/Register.cpp  
+    src/Register.cpp
     src/Register.h
+    src/BSplineRegister.cpp
+    src/BSplineRegister.h
+    src/RegionConfig.cpp
+    src/RegionConfig.h
 )
 
 # Link

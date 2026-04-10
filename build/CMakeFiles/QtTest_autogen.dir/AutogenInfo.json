@@ -289,14 +289,12 @@
 		"C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"C:/opencv/build/OpenCVConfig-version.cmake",
-		"C:/opencv/build/OpenCVConfig.cmake",
-		"C:/opencv/build/x64/vc16/lib/OpenCVConfig.cmake",
+		"D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVConfig-version.cmake",
+		"D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVConfig.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake",
-		"C:/opencv/build/x64/vc16/lib/OpenCVModules.cmake",
-		"C:/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake",
-		"C:/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake",
+		"D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVModules.cmake",
+		"D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVModules-release.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeParseImplicitLinkInfo.cmake",
 		"C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake",
@@ -1270,6 +1268,12 @@
 	"HEADERS" : 
 	[
 		[
+			"D:/Image_registration/qt_viewer/src/BSplineRegister.h",
+			"MU",
+			"UVLADIE3JM/moc_BSplineRegister.cpp",
+			null
+		],
+		[
 			"D:/Image_registration/qt_viewer/src/MainWindow.h",
 			"MU",
 			"UVLADIE3JM/moc_MainWindow.cpp",
@@ -1279,6 +1283,12 @@
 			"D:/Image_registration/qt_viewer/src/Preprocess.h",
 			"MU",
 			"UVLADIE3JM/moc_Preprocess.cpp",
+			null
+		],
+		[
+			"D:/Image_registration/qt_viewer/src/RegionConfig.h",
+			"MU",
+			"UVLADIE3JM/moc_RegionConfig.cpp",
 			null
 		],
 		[
@@ -1513,7 +1523,7 @@
 	[
 		"D:/Image_registration/qt_viewer/build/ITKFactoryRegistration",
 		"D:/Image_registration/dev/ITK-install/include/ITK-6.0",
-		"C:/opencv/build/include",
+		"D:/Image_registration/dev/opencv-build/install/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.8.2/msvc2022_64/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtCore",
@@ -1575,7 +1585,7 @@
 	[
 		"D:/Image_registration/qt_viewer/build/ITKFactoryRegistration",
 		"D:/Image_registration/dev/ITK-install/include/ITK-6.0",
-		"C:/opencv/build/include",
+		"D:/Image_registration/dev/opencv-build/install/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.8.2/msvc2022_64/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtCore",
@@ -1637,7 +1647,7 @@
 	[
 		"D:/Image_registration/qt_viewer/build/ITKFactoryRegistration",
 		"D:/Image_registration/dev/ITK-install/include/ITK-6.0",
-		"C:/opencv/build/include",
+		"D:/Image_registration/dev/opencv-build/install/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.8.2/msvc2022_64/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtCore",
@@ -1699,7 +1709,7 @@
 	[
 		"D:/Image_registration/qt_viewer/build/ITKFactoryRegistration",
 		"D:/Image_registration/dev/ITK-install/include/ITK-6.0",
-		"C:/opencv/build/include",
+		"D:/Image_registration/dev/opencv-build/install/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtWidgets",
 		"C:/Qt/6.8.2/msvc2022_64/include",
 		"C:/Qt/6.8.2/msvc2022_64/include/QtCore",
@@ -1798,8 +1808,10 @@
 	"SETTINGS_FILE_Release" : "D:/Image_registration/qt_viewer/build/CMakeFiles/QtTest_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
+		[ "D:/Image_registration/qt_viewer/src/BSplineRegister.cpp", "MU", null ],
 		[ "D:/Image_registration/qt_viewer/src/MainWindow.cpp", "MU", null ],
 		[ "D:/Image_registration/qt_viewer/src/Preprocess.cpp", "MU", null ],
+		[ "D:/Image_registration/qt_viewer/src/RegionConfig.cpp", "MU", null ],
 		[ "D:/Image_registration/qt_viewer/src/Register.cpp", "MU", null ],
 		[ "D:/Image_registration/qt_viewer/src/VTKViewer.cpp", "MU", null ],
 		[ "D:/Image_registration/qt_viewer/src/main.cpp", "MU", null ]

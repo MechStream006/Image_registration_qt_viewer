@@ -19,6 +19,12 @@
     <ClCompile Include="D:\Image_registration\qt_viewer\src\Register.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Image_registration\qt_viewer\src\BSplineRegister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Image_registration\qt_viewer\src\RegionConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\Image_registration\qt_viewer\build\QtTest_autogen\mocs_compilation_Release.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,6 +46,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Image_registration\qt_viewer\src\Register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Image_registration\qt_viewer\src\BSplineRegister.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Image_registration\qt_viewer\src\RegionConfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

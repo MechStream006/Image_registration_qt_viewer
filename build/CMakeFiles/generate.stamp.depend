@@ -674,12 +674,6 @@ C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cma
 C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake
 C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake
 C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessAliasTargets.cmake
-C:/opencv/build/OpenCVConfig-version.cmake
-C:/opencv/build/OpenCVConfig.cmake
-C:/opencv/build/x64/vc16/lib/OpenCVConfig.cmake
-C:/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake
-C:/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake
-C:/opencv/build/x64/vc16/lib/OpenCVModules.cmake
 D:/Image_registration/dev/ITK-install/lib/cmake/ITK-6.0/ITKConfig.cmake
 D:/Image_registration/dev/ITK-install/lib/cmake/ITK-6.0/ITKConfigVersion.cmake
 D:/Image_registration/dev/ITK-install/lib/cmake/ITK-6.0/ITKFactoryRegistration.cmake
@@ -848,6 +842,10 @@ D:/Image_registration/dev/VTK-install/lib/cmake/vtk-9.6/vtkModuleSerialization.c
 D:/Image_registration/dev/VTK-install/lib/cmake/vtk-9.6/vtkModuleTesting.cmake
 D:/Image_registration/dev/VTK-install/lib/cmake/vtk-9.6/vtkObjectFactory.cmake
 D:/Image_registration/dev/VTK-install/lib/cmake/vtk-9.6/vtkTopologicalSort.cmake
+D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVConfig-version.cmake
+D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVConfig.cmake
+D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVModules-release.cmake
+D:/Image_registration/dev/opencv-build/install/x64/vc17/lib/OpenCVModules.cmake
 D:/Image_registration/qt_viewer/CMakeLists.txt
 D:/Image_registration/qt_viewer/build/CMakeFiles/4.1.2/CMakeCCompiler.cmake
 D:/Image_registration/qt_viewer/build/CMakeFiles/4.1.2/CMakeCXXCompiler.cmake

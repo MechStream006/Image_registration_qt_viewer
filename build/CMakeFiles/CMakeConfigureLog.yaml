@@ -34,8 +34,6 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
     found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -82,6 +80,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -111,6 +111,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -141,7 +142,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 26-03-2026 03:10:24 PM.
+      Build started 01-04-2026 05:17:54 PM.
       
       Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -170,7 +171,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.34
+      Time Elapsed 00:00:00.41
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -247,12 +248,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -261,8 +265,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -309,6 +311,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -338,6 +342,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -409,12 +414,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -555,6 +563,12 @@ events:
       - "D:/Image_registration/dev/ITK-install/bin/lld-link.com"
       - "D:/Image_registration/dev/ITK-install/bin/lld-link.exe"
       - "D:/Image_registration/dev/ITK-install/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/lld-link.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/lld-link.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/lld-link"
@@ -573,6 +587,9 @@ events:
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link"
@@ -587,8 +604,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/lld-link"
     found: false
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -635,6 +650,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -664,6 +681,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -733,12 +751,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -747,8 +768,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -795,6 +814,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -824,6 +845,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -893,12 +915,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -931,8 +956,6 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.com"
     found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.exe"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -979,6 +1002,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -1008,6 +1033,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1077,12 +1103,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -1091,8 +1120,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -1139,6 +1166,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -1168,6 +1197,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1198,8 +1228,6 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
     found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -1246,6 +1274,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -1275,6 +1305,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1305,7 +1336,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 26-03-2026 03:10:25 PM.
+      Build started 01-04-2026 05:17:55 PM.
       
       Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\4.1.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -1334,7 +1365,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.40
+      Time Elapsed 00:00:00.34
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1411,12 +1442,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -1557,6 +1591,12 @@ events:
       - "D:/Image_registration/dev/ITK-install/bin/lld-link.com"
       - "D:/Image_registration/dev/ITK-install/bin/lld-link.exe"
       - "D:/Image_registration/dev/ITK-install/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/lld-link.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/lld-link.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/lld-link"
@@ -1575,6 +1615,9 @@ events:
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link"
@@ -1589,8 +1632,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/lld-link"
     found: false
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -1637,6 +1678,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -1666,6 +1709,7 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1693,9 +1737,6 @@ events:
     names:
       - "rc"
     candidate_directories:
-      - "C:/Qt/6.8.2/msvc2022_64/bin/"
-      - "C:/Qt/6.8.2/msvc2022_64/sbin/"
-      - "C:/Qt/6.8.2/msvc2022_64/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
@@ -1741,12 +1782,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -1760,19 +1804,10 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/bin/"
-      - "C:/Program Files/QtTest/sbin/"
-      - "C:/Program Files/QtTest/"
+      - "C:/Program Files (x86)/QtTest/bin/"
+      - "C:/Program Files (x86)/QtTest/sbin/"
+      - "C:/Program Files (x86)/QtTest/"
     searched_directories:
-      - "C:/Qt/6.8.2/msvc2022_64/bin/rc.com"
-      - "C:/Qt/6.8.2/msvc2022_64/bin/rc.exe"
-      - "C:/Qt/6.8.2/msvc2022_64/bin/rc"
-      - "C:/Qt/6.8.2/msvc2022_64/sbin/rc.com"
-      - "C:/Qt/6.8.2/msvc2022_64/sbin/rc.exe"
-      - "C:/Qt/6.8.2/msvc2022_64/sbin/rc"
-      - "C:/Qt/6.8.2/msvc2022_64/rc.com"
-      - "C:/Qt/6.8.2/msvc2022_64/rc.exe"
-      - "C:/Qt/6.8.2/msvc2022_64/rc"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/rc.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/rc.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/rc"
@@ -1800,8 +1835,6 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.com"
     found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.exe"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "C:/Qt/6.8.2/msvc2022_64"
       ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
@@ -1848,6 +1881,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -1877,16 +1912,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1896,8 +1932,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-e6mgrb"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-e6mgrb"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-4ys0dv"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-4ys0dv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1906,40 +1942,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-e6mgrb'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-4ys0dv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_932ff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_49f6f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:25 PM.
+        Build started 01-04-2026 05:17:55 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6mgrb\\cmTC_932ff.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ys0dv\\cmTC_49f6f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_932ff.dir\\Debug\\".
+          Creating directory "cmTC_49f6f.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6mgrb\\Debug\\".
-          Creating directory "cmTC_932ff.dir\\Debug\\cmTC_932ff.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ys0dv\\Debug\\".
+          Creating directory "cmTC_49f6f.dir\\Debug\\cmTC_49f6f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_932ff.dir\\Debug\\cmTC_932ff.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_932ff.dir\\Debug\\cmTC_932ff.tlog\\unsuccessfulbuild".
+          Creating "cmTC_49f6f.dir\\Debug\\cmTC_49f6f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_49f6f.dir\\Debug\\cmTC_49f6f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_932ff.dir\\Debug\\\\" /Fd"cmTC_932ff.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_49f6f.dir\\Debug\\\\" /Fd"cmTC_49f6f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_932ff.dir\\Debug\\\\" /Fd"cmTC_932ff.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_49f6f.dir\\Debug\\\\" /Fd"cmTC_49f6f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6mgrb\\Debug\\cmTC_932ff.exe" /INCREMENTAL /ILK:"cmTC_932ff.dir\\Debug\\cmTC_932ff.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-e6mgrb/Debug/cmTC_932ff.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-e6mgrb/Debug/cmTC_932ff.lib" /MACHINE:X64  /machine:x64 cmTC_932ff.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_932ff.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6mgrb\\Debug\\cmTC_932ff.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ys0dv\\Debug\\cmTC_49f6f.exe" /INCREMENTAL /ILK:"cmTC_49f6f.dir\\Debug\\cmTC_49f6f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-4ys0dv/Debug/cmTC_49f6f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-4ys0dv/Debug/cmTC_49f6f.lib" /MACHINE:X64  /machine:x64 cmTC_49f6f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_49f6f.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ys0dv\\Debug\\cmTC_49f6f.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_932ff.dir\\Debug\\cmTC_932ff.tlog\\unsuccessfulbuild".
-          Touching "cmTC_932ff.dir\\Debug\\cmTC_932ff.tlog\\cmTC_932ff.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6mgrb\\cmTC_932ff.vcxproj" (default targets).
+          Deleting file "cmTC_49f6f.dir\\Debug\\cmTC_49f6f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_49f6f.dir\\Debug\\cmTC_49f6f.tlog\\cmTC_49f6f.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4ys0dv\\cmTC_49f6f.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.40
+        Time Elapsed 00:00:00.37
         
       exitCode: 0
   -
@@ -1979,8 +2015,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-m0r1wc"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-m0r1wc"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-9mq44v"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-9mq44v"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1990,40 +2026,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-m0r1wc'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-9mq44v'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b70cb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a0d65.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:26 PM.
+        Build started 01-04-2026 05:17:56 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0r1wc\\cmTC_b70cb.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9mq44v\\cmTC_a0d65.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_b70cb.dir\\Debug\\".
+          Creating directory "cmTC_a0d65.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0r1wc\\Debug\\".
-          Creating directory "cmTC_b70cb.dir\\Debug\\cmTC_b70cb.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9mq44v\\Debug\\".
+          Creating directory "cmTC_a0d65.dir\\Debug\\cmTC_a0d65.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_b70cb.dir\\Debug\\cmTC_b70cb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_b70cb.dir\\Debug\\cmTC_b70cb.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a0d65.dir\\Debug\\cmTC_a0d65.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a0d65.dir\\Debug\\cmTC_a0d65.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b70cb.dir\\Debug\\\\" /Fd"cmTC_b70cb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_a0d65.dir\\Debug\\\\" /Fd"cmTC_a0d65.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b70cb.dir\\Debug\\\\" /Fd"cmTC_b70cb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_a0d65.dir\\Debug\\\\" /Fd"cmTC_a0d65.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0r1wc\\Debug\\cmTC_b70cb.exe" /INCREMENTAL /ILK:"cmTC_b70cb.dir\\Debug\\cmTC_b70cb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-m0r1wc/Debug/cmTC_b70cb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-m0r1wc/Debug/cmTC_b70cb.lib" /MACHINE:X64  /machine:x64 cmTC_b70cb.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_b70cb.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0r1wc\\Debug\\cmTC_b70cb.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9mq44v\\Debug\\cmTC_a0d65.exe" /INCREMENTAL /ILK:"cmTC_a0d65.dir\\Debug\\cmTC_a0d65.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-9mq44v/Debug/cmTC_a0d65.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-9mq44v/Debug/cmTC_a0d65.lib" /MACHINE:X64  /machine:x64 cmTC_a0d65.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_a0d65.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9mq44v\\Debug\\cmTC_a0d65.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_b70cb.dir\\Debug\\cmTC_b70cb.tlog\\unsuccessfulbuild".
-          Touching "cmTC_b70cb.dir\\Debug\\cmTC_b70cb.tlog\\cmTC_b70cb.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0r1wc\\cmTC_b70cb.vcxproj" (default targets).
+          Deleting file "cmTC_a0d65.dir\\Debug\\cmTC_a0d65.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a0d65.dir\\Debug\\cmTC_a0d65.tlog\\cmTC_a0d65.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9mq44v\\cmTC_a0d65.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.39
+        Time Elapsed 00:00:00.31
         
       exitCode: 0
   -
@@ -2069,8 +2105,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-hwp8ot"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-hwp8ot"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-28o6e8"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-28o6e8"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2080,35 +2116,34 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-hwp8ot'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-28o6e8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_30aea.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5db74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:27 PM.
+        Build started 01-04-2026 05:17:57 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\cmTC_30aea.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\cmTC_5db74.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_30aea.dir\\Debug\\".
+          Creating directory "cmTC_5db74.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\Debug\\".
-          Creating directory "cmTC_30aea.dir\\Debug\\cmTC_30aea.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\Debug\\".
+          Creating directory "cmTC_5db74.dir\\Debug\\cmTC_5db74.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_30aea.dir\\Debug\\cmTC_30aea.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_30aea.dir\\Debug\\cmTC_30aea.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5db74.dir\\Debug\\cmTC_5db74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5db74.dir\\Debug\\cmTC_5db74.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_30aea.dir\\Debug\\\\" /Fd"cmTC_30aea.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_5db74.dir\\Debug\\\\" /Fd"cmTC_5db74.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\src.c"
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_30aea.dir\\Debug\\\\" /Fd"cmTC_30aea.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\src.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_5db74.dir\\Debug\\\\" /Fd"cmTC_5db74.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\src.c"
           src.c
-        D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\cmTC_30aea.vcxproj]
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\cmTC_30aea.vcxproj" (default targets) -- FAILED.
+        D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\cmTC_5db74.vcxproj]
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\cmTC_5db74.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\cmTC_30aea.vcxproj" (default target) (1) ->
+        "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\cmTC_5db74.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hwp8ot\\cmTC_30aea.vcxproj]
+          D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-28o6e8\\cmTC_5db74.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -2130,8 +2165,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-lzrf49"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-lzrf49"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-3t5hs6"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-3t5hs6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2141,37 +2176,37 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-lzrf49'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-3t5hs6'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2598b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3229.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:27 PM.
+        Build started 01-04-2026 05:17:57 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\cmTC_2598b.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\cmTC_a3229.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_2598b.dir\\Debug\\".
+          Creating directory "cmTC_a3229.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\Debug\\".
-          Creating directory "cmTC_2598b.dir\\Debug\\cmTC_2598b.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\Debug\\".
+          Creating directory "cmTC_a3229.dir\\Debug\\cmTC_a3229.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2598b.dir\\Debug\\cmTC_2598b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2598b.dir\\Debug\\cmTC_2598b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a3229.dir\\Debug\\cmTC_a3229.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a3229.dir\\Debug\\cmTC_a3229.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_2598b.dir\\Debug\\\\" /Fd"cmTC_2598b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a3229.dir\\Debug\\\\" /Fd"cmTC_a3229.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_2598b.dir\\Debug\\\\" /Fd"cmTC_2598b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_a3229.dir\\Debug\\\\" /Fd"cmTC_a3229.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\Debug\\cmTC_2598b.exe" /INCREMENTAL /ILK:"cmTC_2598b.dir\\Debug\\cmTC_2598b.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-lzrf49/Debug/cmTC_2598b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-lzrf49/Debug/cmTC_2598b.lib" /MACHINE:X64  /machine:x64 cmTC_2598b.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\cmTC_2598b.vcxproj]
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\cmTC_2598b.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\Debug\\cmTC_a3229.exe" /INCREMENTAL /ILK:"cmTC_a3229.dir\\Debug\\cmTC_a3229.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-3t5hs6/Debug/cmTC_a3229.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-3t5hs6/Debug/cmTC_a3229.lib" /MACHINE:X64  /machine:x64 cmTC_a3229.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\cmTC_a3229.vcxproj]
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\cmTC_a3229.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\cmTC_2598b.vcxproj" (default target) (1) ->
+        "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\cmTC_a3229.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lzrf49\\cmTC_2598b.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3t5hs6\\cmTC_a3229.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -2193,8 +2228,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-wjcx24"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-wjcx24"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-b235pn"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-b235pn"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2204,42 +2239,42 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-wjcx24'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-b235pn'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_17bbe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f90c2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:27 PM.
+        Build started 01-04-2026 05:17:57 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\cmTC_17bbe.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\cmTC_f90c2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_17bbe.dir\\Debug\\".
+          Creating directory "cmTC_f90c2.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\Debug\\".
-          Creating directory "cmTC_17bbe.dir\\Debug\\cmTC_17bbe.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\Debug\\".
+          Creating directory "cmTC_f90c2.dir\\Debug\\cmTC_f90c2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_17bbe.dir\\Debug\\cmTC_17bbe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_17bbe.dir\\Debug\\cmTC_17bbe.tlog\\unsuccessfulbuild".
+          Creating "cmTC_f90c2.dir\\Debug\\cmTC_f90c2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f90c2.dir\\Debug\\cmTC_f90c2.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_17bbe.dir\\Debug\\\\" /Fd"cmTC_17bbe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_f90c2.dir\\Debug\\\\" /Fd"cmTC_f90c2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_17bbe.dir\\Debug\\\\" /Fd"cmTC_17bbe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_f90c2.dir\\Debug\\\\" /Fd"cmTC_f90c2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\Debug\\cmTC_17bbe.exe" /INCREMENTAL /ILK:"cmTC_17bbe.dir\\Debug\\cmTC_17bbe.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-wjcx24/Debug/cmTC_17bbe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-wjcx24/Debug/cmTC_17bbe.lib" /MACHINE:X64  /machine:x64 cmTC_17bbe.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\cmTC_17bbe.vcxproj]
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\cmTC_17bbe.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\Debug\\cmTC_f90c2.exe" /INCREMENTAL /ILK:"cmTC_f90c2.dir\\Debug\\cmTC_f90c2.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-b235pn/Debug/cmTC_f90c2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-b235pn/Debug/cmTC_f90c2.lib" /MACHINE:X64  /machine:x64 cmTC_f90c2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\cmTC_f90c2.vcxproj]
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\cmTC_f90c2.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\cmTC_17bbe.vcxproj" (default target) (1) ->
+        "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\cmTC_f90c2.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wjcx24\\cmTC_17bbe.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b235pn\\cmTC_f90c2.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.24
+        Time Elapsed 00:00:00.33
         
       exitCode: 1
   -
@@ -2358,6 +2393,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -2387,16 +2424,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -2513,6 +2551,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -2542,16 +2582,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -2665,6 +2706,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -2694,16 +2737,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -2723,8 +2767,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tgps4o"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tgps4o"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-6rs58v"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-6rs58v"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -2734,40 +2778,40 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tgps4o'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-6rs58v'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_36eec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_93485.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:28 PM.
+        Build started 01-04-2026 05:17:58 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\cmTC_36eec.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\cmTC_93485.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_36eec.dir\\Debug\\".
+          Creating directory "cmTC_93485.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\Debug\\".
-          Creating directory "cmTC_36eec.dir\\Debug\\cmTC_36eec.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\Debug\\".
+          Creating directory "cmTC_93485.dir\\Debug\\cmTC_93485.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_36eec.dir\\Debug\\cmTC_36eec.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_36eec.dir\\Debug\\cmTC_36eec.tlog\\unsuccessfulbuild".
+          Creating "cmTC_93485.dir\\Debug\\cmTC_93485.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_93485.dir\\Debug\\cmTC_93485.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_36eec.dir\\Debug\\\\" /Fd"cmTC_36eec.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_93485.dir\\Debug\\\\" /Fd"cmTC_93485.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_36eec.dir\\Debug\\\\" /Fd"cmTC_36eec.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /std:c++17 /Fo"cmTC_93485.dir\\Debug\\\\" /Fd"cmTC_93485.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\Debug\\cmTC_36eec.exe" /INCREMENTAL /ILK:"cmTC_36eec.dir\\Debug\\cmTC_36eec.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tgps4o/Debug/cmTC_36eec.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tgps4o/Debug/cmTC_36eec.lib" /MACHINE:X64  /machine:x64 cmTC_36eec.dir\\Debug\\src.obj
-          cmTC_36eec.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\Debug\\cmTC_36eec.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\Debug\\cmTC_93485.exe" /INCREMENTAL /ILK:"cmTC_93485.dir\\Debug\\cmTC_93485.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-6rs58v/Debug/cmTC_93485.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-6rs58v/Debug/cmTC_93485.lib" /MACHINE:X64  /machine:x64 cmTC_93485.dir\\Debug\\src.obj
+          cmTC_93485.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\Debug\\cmTC_93485.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_36eec.dir\\Debug\\cmTC_36eec.tlog\\unsuccessfulbuild".
-          Touching "cmTC_36eec.dir\\Debug\\cmTC_36eec.tlog\\cmTC_36eec.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgps4o\\cmTC_36eec.vcxproj" (default targets).
+          Deleting file "cmTC_93485.dir\\Debug\\cmTC_93485.tlog\\unsuccessfulbuild".
+          Touching "cmTC_93485.dir\\Debug\\cmTC_93485.tlog\\cmTC_93485.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6rs58v\\cmTC_93485.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:00.47
         
       exitCode: 0
   -
@@ -2919,6 +2963,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -2948,16 +2994,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -3107,6 +3154,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -3136,16 +3185,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find-v1"
     backtrace:
@@ -3221,12 +3271,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -3240,9 +3293,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/bin/"
-      - "C:/Program Files/QtTest/sbin/"
-      - "C:/Program Files/QtTest/"
+      - "C:/Program Files (x86)/QtTest/bin/"
+      - "C:/Program Files (x86)/QtTest/sbin/"
+      - "C:/Program Files (x86)/QtTest/"
     searched_directories:
       - "C:/Qt/6.8.2/msvc2022_64/bin/windeployqt.com"
     found: "C:/Qt/6.8.2/msvc2022_64/bin/windeployqt.exe"
@@ -3295,6 +3348,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -3324,16 +3379,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -3448,6 +3504,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -3477,16 +3535,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find-v1"
     backtrace:
@@ -3572,12 +3631,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -3588,8 +3650,8 @@ events:
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/include/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/include/"
-      - "C:/Program Files/QtTest/"
+      - "C:/Program Files (x86)/QtTest/include/"
+      - "C:/Program Files (x86)/QtTest/"
     searched_directories:
       - "C:/Qt/6.8.2/msvc2022_64/include/vulkan/vulkan.h"
       - "C:/Qt/6.8.2/msvc2022_64/vulkan/vulkan.h"
@@ -3648,12 +3710,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/vulkan/vulkan.h"
       - "D:/Image_registration/dev/VTK-install/bin/vulkan/vulkan.h"
       - "D:/Image_registration/dev/ITK-install/bin/vulkan/vulkan.h"
+      - "C:/ProgramData/chocolatey/bin/vulkan/vulkan.h"
+      - "C:/Program Files/nodejs/vulkan/vulkan.h"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/vulkan/vulkan.h"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/vulkan/vulkan.h"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/vulkan/vulkan.h"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/vulkan/vulkan.h"
       - "C:/Users/VI3CATH/.dotnet/tools/vulkan/vulkan.h"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/vulkan/vulkan.h"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/vulkan/vulkan.h"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/vulkan/vulkan.h"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/vulkan/vulkan.h"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/vulkan/vulkan.h"
@@ -3664,8 +3729,8 @@ events:
       - "C:/Program Files (x86)/vulkan/vulkan.h"
       - "C:/Program Files/CMake/include/vulkan/vulkan.h"
       - "C:/Program Files/CMake/vulkan/vulkan.h"
-      - "C:/Program Files/QtTest/include/vulkan/vulkan.h"
-      - "C:/Program Files/QtTest/vulkan/vulkan.h"
+      - "C:/Program Files (x86)/QtTest/include/vulkan/vulkan.h"
+      - "C:/Program Files (x86)/QtTest/vulkan/vulkan.h"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
@@ -3716,6 +3781,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -3745,16 +3812,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
       ENV{INCLUDE}:
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\ATLMFC\\include"
@@ -3847,12 +3915,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -3863,9 +3934,9 @@ events:
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/lib/"
-      - "C:/Program Files/QtTest/"
-      - "C:/Program Files/QtTest/bin/"
+      - "C:/Program Files (x86)/QtTest/lib/"
+      - "C:/Program Files (x86)/QtTest/"
+      - "C:/Program Files (x86)/QtTest/bin/"
     searched_directories:
       - "C:/Qt/6.8.2/msvc2022_64/lib/"
       - "C:/Qt/6.8.2/msvc2022_64/"
@@ -3921,12 +3992,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -3937,9 +4011,9 @@ events:
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/lib/"
-      - "C:/Program Files/QtTest/"
-      - "C:/Program Files/QtTest/bin/"
+      - "C:/Program Files (x86)/QtTest/lib/"
+      - "C:/Program Files (x86)/QtTest/"
+      - "C:/Program Files (x86)/QtTest/bin/"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
@@ -3990,6 +4064,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -4019,18 +4095,19 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Program Files/QtTest/bin"
+        - "C:/Program Files (x86)/QtTest/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
       ENV{LIB}:
@@ -4116,12 +4193,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -4135,9 +4215,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/bin/"
-      - "C:/Program Files/QtTest/sbin/"
-      - "C:/Program Files/QtTest/"
+      - "C:/Program Files (x86)/QtTest/bin/"
+      - "C:/Program Files (x86)/QtTest/sbin/"
+      - "C:/Program Files (x86)/QtTest/"
     searched_directories:
       - "C:/Qt/6.8.2/msvc2022_64/bin/glslc.com"
       - "C:/Qt/6.8.2/msvc2022_64/bin/glslc.exe"
@@ -4286,6 +4366,12 @@ events:
       - "D:/Image_registration/dev/ITK-install/bin/glslc.com"
       - "D:/Image_registration/dev/ITK-install/bin/glslc.exe"
       - "D:/Image_registration/dev/ITK-install/bin/glslc"
+      - "C:/ProgramData/chocolatey/bin/glslc.com"
+      - "C:/ProgramData/chocolatey/bin/glslc.exe"
+      - "C:/ProgramData/chocolatey/bin/glslc"
+      - "C:/Program Files/nodejs/glslc.com"
+      - "C:/Program Files/nodejs/glslc.exe"
+      - "C:/Program Files/nodejs/glslc"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/glslc.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/glslc.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/glslc"
@@ -4304,6 +4390,9 @@ events:
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/glslc.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/glslc.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/glslc"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/glslc.com"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/glslc.exe"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/glslc"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslc.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslc.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslc"
@@ -4343,15 +4432,15 @@ events:
       - "C:/Program Files/CMake/glslc.com"
       - "C:/Program Files/CMake/glslc.exe"
       - "C:/Program Files/CMake/glslc"
-      - "C:/Program Files/QtTest/bin/glslc.com"
-      - "C:/Program Files/QtTest/bin/glslc.exe"
-      - "C:/Program Files/QtTest/bin/glslc"
-      - "C:/Program Files/QtTest/sbin/glslc.com"
-      - "C:/Program Files/QtTest/sbin/glslc.exe"
-      - "C:/Program Files/QtTest/sbin/glslc"
-      - "C:/Program Files/QtTest/glslc.com"
-      - "C:/Program Files/QtTest/glslc.exe"
-      - "C:/Program Files/QtTest/glslc"
+      - "C:/Program Files (x86)/QtTest/bin/glslc.com"
+      - "C:/Program Files (x86)/QtTest/bin/glslc.exe"
+      - "C:/Program Files (x86)/QtTest/bin/glslc"
+      - "C:/Program Files (x86)/QtTest/sbin/glslc.com"
+      - "C:/Program Files (x86)/QtTest/sbin/glslc.exe"
+      - "C:/Program Files (x86)/QtTest/sbin/glslc"
+      - "C:/Program Files (x86)/QtTest/glslc.com"
+      - "C:/Program Files (x86)/QtTest/glslc.exe"
+      - "C:/Program Files (x86)/QtTest/glslc"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
@@ -4402,6 +4491,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -4431,16 +4522,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find-v1"
     backtrace:
@@ -4518,12 +4610,15 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "D:/Image_registration/dev/VTK-install/bin/"
       - "D:/Image_registration/dev/ITK-install/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/"
       - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/"
       - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Bin/"
       - "C:/Users/VI3CATH/.dotnet/tools/"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -4537,9 +4632,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/QtTest/bin/"
-      - "C:/Program Files/QtTest/sbin/"
-      - "C:/Program Files/QtTest/"
+      - "C:/Program Files (x86)/QtTest/bin/"
+      - "C:/Program Files (x86)/QtTest/sbin/"
+      - "C:/Program Files (x86)/QtTest/"
     searched_directories:
       - "C:/Qt/6.8.2/msvc2022_64/bin/glslangValidator.com"
       - "C:/Qt/6.8.2/msvc2022_64/bin/glslangValidator.exe"
@@ -4688,6 +4783,12 @@ events:
       - "D:/Image_registration/dev/ITK-install/bin/glslangValidator.com"
       - "D:/Image_registration/dev/ITK-install/bin/glslangValidator.exe"
       - "D:/Image_registration/dev/ITK-install/bin/glslangValidator"
+      - "C:/ProgramData/chocolatey/bin/glslangValidator.com"
+      - "C:/ProgramData/chocolatey/bin/glslangValidator.exe"
+      - "C:/ProgramData/chocolatey/bin/glslangValidator"
+      - "C:/Program Files/nodejs/glslangValidator.com"
+      - "C:/Program Files/nodejs/glslangValidator.exe"
+      - "C:/Program Files/nodejs/glslangValidator"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/glslangValidator.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/glslangValidator.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/glslangValidator"
@@ -4706,6 +4807,9 @@ events:
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/glslangValidator.com"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/glslangValidator.exe"
       - "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/bin/glslangValidator"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/glslangValidator.com"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/glslangValidator.exe"
+      - "C:/Users/VI3CATH/AppData/Roaming/npm/glslangValidator"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslangValidator.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslangValidator.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/glslangValidator"
@@ -4745,15 +4849,15 @@ events:
       - "C:/Program Files/CMake/glslangValidator.com"
       - "C:/Program Files/CMake/glslangValidator.exe"
       - "C:/Program Files/CMake/glslangValidator"
-      - "C:/Program Files/QtTest/bin/glslangValidator.com"
-      - "C:/Program Files/QtTest/bin/glslangValidator.exe"
-      - "C:/Program Files/QtTest/bin/glslangValidator"
-      - "C:/Program Files/QtTest/sbin/glslangValidator.com"
-      - "C:/Program Files/QtTest/sbin/glslangValidator.exe"
-      - "C:/Program Files/QtTest/sbin/glslangValidator"
-      - "C:/Program Files/QtTest/glslangValidator.com"
-      - "C:/Program Files/QtTest/glslangValidator.exe"
-      - "C:/Program Files/QtTest/glslangValidator"
+      - "C:/Program Files (x86)/QtTest/bin/glslangValidator.com"
+      - "C:/Program Files (x86)/QtTest/bin/glslangValidator.exe"
+      - "C:/Program Files (x86)/QtTest/bin/glslangValidator"
+      - "C:/Program Files (x86)/QtTest/sbin/glslangValidator.com"
+      - "C:/Program Files (x86)/QtTest/sbin/glslangValidator.exe"
+      - "C:/Program Files (x86)/QtTest/sbin/glslangValidator"
+      - "C:/Program Files (x86)/QtTest/glslangValidator.com"
+      - "C:/Program Files (x86)/QtTest/glslangValidator.exe"
+      - "C:/Program Files (x86)/QtTest/glslangValidator"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
@@ -4804,6 +4908,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -4833,16 +4939,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4957,6 +5064,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -4986,16 +5095,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5103,6 +5213,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -5132,16 +5244,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5251,6 +5364,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -5280,16 +5395,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
       CMAKE_MODULE_PATH:
         - "C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6"
         - "C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
@@ -5302,8 +5418,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-jhikl9"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-jhikl9"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tavrtl"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tavrtl"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -5313,40 +5429,40 @@ events:
       variable: "OpenMP_COMPILE_RESULT_C_openmp"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-jhikl9'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tavrtl'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_93e0e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a867f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:29 PM.
+        Build started 01-04-2026 05:17:59 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\cmTC_93e0e.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\cmTC_a867f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_93e0e.dir\\Debug\\".
+          Creating directory "cmTC_a867f.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\Debug\\".
-          Creating directory "cmTC_93e0e.dir\\Debug\\cmTC_93e0e.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\Debug\\".
+          Creating directory "cmTC_a867f.dir\\Debug\\cmTC_a867f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_93e0e.dir\\Debug\\cmTC_93e0e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_93e0e.dir\\Debug\\cmTC_93e0e.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a867f.dir\\Debug\\cmTC_a867f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a867f.dir\\Debug\\cmTC_a867f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_93e0e.dir\\Debug\\\\" /Fd"cmTC_93e0e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\OpenMPTryFlag.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_a867f.dir\\Debug\\\\" /Fd"cmTC_a867f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\OpenMPTryFlag.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_93e0e.dir\\Debug\\\\" /Fd"cmTC_93e0e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\OpenMPTryFlag.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_a867f.dir\\Debug\\\\" /Fd"cmTC_a867f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\OpenMPTryFlag.c"
           OpenMPTryFlag.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\Debug\\cmTC_93e0e.exe" /INCREMENTAL /ILK:"cmTC_93e0e.dir\\Debug\\cmTC_93e0e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-jhikl9/Debug/cmTC_93e0e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-jhikl9/Debug/cmTC_93e0e.lib" /MACHINE:X64  /machine:x64 cmTC_93e0e.dir\\Debug\\OpenMPTryFlag.obj
-          cmTC_93e0e.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\Debug\\cmTC_93e0e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\Debug\\cmTC_a867f.exe" /INCREMENTAL /ILK:"cmTC_a867f.dir\\Debug\\cmTC_a867f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tavrtl/Debug/cmTC_a867f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-tavrtl/Debug/cmTC_a867f.lib" /MACHINE:X64  /machine:x64 cmTC_a867f.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_a867f.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\Debug\\cmTC_a867f.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_93e0e.dir\\Debug\\cmTC_93e0e.tlog\\unsuccessfulbuild".
-          Touching "cmTC_93e0e.dir\\Debug\\cmTC_93e0e.tlog\\cmTC_93e0e.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhikl9\\cmTC_93e0e.vcxproj" (default targets).
+          Deleting file "cmTC_a867f.dir\\Debug\\cmTC_a867f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a867f.dir\\Debug\\cmTC_a867f.tlog\\cmTC_a867f.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tavrtl\\cmTC_a867f.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.39
+        Time Elapsed 00:00:00.35
         
       exitCode: 0
   -
@@ -5357,8 +5473,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-xqz9jb"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-xqz9jb"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2q99ii"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2q99ii"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -5368,89 +5484,34 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-xqz9jb'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2q99ii'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0f4c1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_074e1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:29 PM.
+        Build started 01-04-2026 05:17:59 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\cmTC_0f4c1.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\cmTC_074e1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_0f4c1.dir\\Debug\\".
+          Creating directory "cmTC_074e1.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\Debug\\".
-          Creating directory "cmTC_0f4c1.dir\\Debug\\cmTC_0f4c1.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\Debug\\".
+          Creating directory "cmTC_074e1.dir\\Debug\\cmTC_074e1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_0f4c1.dir\\Debug\\cmTC_0f4c1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_0f4c1.dir\\Debug\\cmTC_0f4c1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_074e1.dir\\Debug\\cmTC_074e1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_074e1.dir\\Debug\\cmTC_074e1.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_0f4c1.dir\\Debug\\\\" /Fd"cmTC_0f4c1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\OpenMPTryFlag.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_074e1.dir\\Debug\\\\" /Fd"cmTC_074e1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\OpenMPTryFlag.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_0f4c1.dir\\Debug\\\\" /Fd"cmTC_0f4c1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\OpenMPTryFlag.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_074e1.dir\\Debug\\\\" /Fd"cmTC_074e1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\OpenMPTryFlag.cpp"
           OpenMPTryFlag.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\Debug\\cmTC_0f4c1.exe" /INCREMENTAL /ILK:"cmTC_0f4c1.dir\\Debug\\cmTC_0f4c1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-xqz9jb/Debug/cmTC_0f4c1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-xqz9jb/Debug/cmTC_0f4c1.lib" /MACHINE:X64  /machine:x64 cmTC_0f4c1.dir\\Debug\\OpenMPTryFlag.obj
-          cmTC_0f4c1.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\Debug\\cmTC_0f4c1.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\Debug\\cmTC_074e1.exe" /INCREMENTAL /ILK:"cmTC_074e1.dir\\Debug\\cmTC_074e1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2q99ii/Debug/cmTC_074e1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2q99ii/Debug/cmTC_074e1.lib" /MACHINE:X64  /machine:x64 cmTC_074e1.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_074e1.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\Debug\\cmTC_074e1.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_0f4c1.dir\\Debug\\cmTC_0f4c1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_0f4c1.dir\\Debug\\cmTC_0f4c1.tlog\\cmTC_0f4c1.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xqz9jb\\cmTC_0f4c1.vcxproj" (default targets).
-        
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
-        
-        Time Elapsed 00:00:00.41
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:492 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:632 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:19 (find_package)"
-    description: "Detecting C OpenMP version"
-    directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-eauysy"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-eauysy"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6;C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "OpenMP_SPECTEST_C_"
-      cached: true
-      stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-eauysy'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c16b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:30 PM.
-        
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\cmTC_c16b9.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_c16b9.dir\\Debug\\".
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\Debug\\".
-          Creating directory "cmTC_c16b9.dir\\Debug\\cmTC_c16b9.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_c16b9.dir\\Debug\\cmTC_c16b9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c16b9.dir\\Debug\\cmTC_c16b9.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_c16b9.dir\\Debug\\\\" /Fd"cmTC_c16b9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\OpenMPCheckVersion.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_c16b9.dir\\Debug\\\\" /Fd"cmTC_c16b9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\OpenMPCheckVersion.c"
-          OpenMPCheckVersion.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\Debug\\cmTC_c16b9.exe" /INCREMENTAL /ILK:"cmTC_c16b9.dir\\Debug\\cmTC_c16b9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-eauysy/Debug/cmTC_c16b9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-eauysy/Debug/cmTC_c16b9.lib" /MACHINE:X64  /machine:x64 cmTC_c16b9.dir\\Debug\\OpenMPCheckVersion.obj
-          cmTC_c16b9.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\Debug\\cmTC_c16b9.exe
-        FinalizeBuildStatus:
-          Deleting file "cmTC_c16b9.dir\\Debug\\cmTC_c16b9.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c16b9.dir\\Debug\\cmTC_c16b9.tlog\\cmTC_c16b9.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eauysy\\cmTC_c16b9.vcxproj" (default targets).
+          Deleting file "cmTC_074e1.dir\\Debug\\cmTC_074e1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_074e1.dir\\Debug\\cmTC_074e1.tlog\\cmTC_074e1.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q99ii\\cmTC_074e1.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -5465,10 +5526,65 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:492 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:632 (_OPENMP_GET_SPEC_DATE)"
       - "CMakeLists.txt:19 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-nw5212"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-nw5212"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6;C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-nw5212'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_98d08.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 01-04-2026 05:18:00 PM.
+        
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\cmTC_98d08.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_98d08.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\Debug\\".
+          Creating directory "cmTC_98d08.dir\\Debug\\cmTC_98d08.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_98d08.dir\\Debug\\cmTC_98d08.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_98d08.dir\\Debug\\cmTC_98d08.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_98d08.dir\\Debug\\\\" /Fd"cmTC_98d08.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\OpenMPCheckVersion.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /Fo"cmTC_98d08.dir\\Debug\\\\" /Fd"cmTC_98d08.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\OpenMPCheckVersion.c"
+          OpenMPCheckVersion.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\Debug\\cmTC_98d08.exe" /INCREMENTAL /ILK:"cmTC_98d08.dir\\Debug\\cmTC_98d08.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-nw5212/Debug/cmTC_98d08.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-nw5212/Debug/cmTC_98d08.lib" /MACHINE:X64  /machine:x64 cmTC_98d08.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_98d08.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\Debug\\cmTC_98d08.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_98d08.dir\\Debug\\cmTC_98d08.tlog\\unsuccessfulbuild".
+          Touching "cmTC_98d08.dir\\Debug\\cmTC_98d08.tlog\\cmTC_98d08.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nw5212\\cmTC_98d08.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.41
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:492 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:632 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:19 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2zupkp"
-      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2zupkp"
+      source: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-j4b6lw"
+      binary: "D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-j4b6lw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -5478,40 +5594,40 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2zupkp'
+        Change Dir: 'D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-j4b6lw'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_044f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_20ba4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 26-03-2026 03:10:30 PM.
+        Build started 01-04-2026 05:18:00 PM.
         
-        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\cmTC_044f6.vcxproj" on node 1 (default targets).
+        Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\cmTC_20ba4.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_044f6.dir\\Debug\\".
+          Creating directory "cmTC_20ba4.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\Debug\\".
-          Creating directory "cmTC_044f6.dir\\Debug\\cmTC_044f6.tlog\\".
+          Creating directory "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\Debug\\".
+          Creating directory "cmTC_20ba4.dir\\Debug\\cmTC_20ba4.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_044f6.dir\\Debug\\cmTC_044f6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_044f6.dir\\Debug\\cmTC_044f6.tlog\\unsuccessfulbuild".
+          Creating "cmTC_20ba4.dir\\Debug\\cmTC_20ba4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_20ba4.dir\\Debug\\cmTC_20ba4.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_044f6.dir\\Debug\\\\" /Fd"cmTC_044f6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\OpenMPCheckVersion.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_20ba4.dir\\Debug\\\\" /Fd"cmTC_20ba4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\OpenMPCheckVersion.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35225 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_044f6.dir\\Debug\\\\" /Fd"cmTC_044f6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\OpenMPCheckVersion.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_20ba4.dir\\Debug\\\\" /Fd"cmTC_20ba4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\OpenMPCheckVersion.cpp"
           OpenMPCheckVersion.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\Debug\\cmTC_044f6.exe" /INCREMENTAL /ILK:"cmTC_044f6.dir\\Debug\\cmTC_044f6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2zupkp/Debug/cmTC_044f6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-2zupkp/Debug/cmTC_044f6.lib" /MACHINE:X64  /machine:x64 cmTC_044f6.dir\\Debug\\OpenMPCheckVersion.obj
-          cmTC_044f6.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\Debug\\cmTC_044f6.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\Debug\\cmTC_20ba4.exe" /INCREMENTAL /ILK:"cmTC_20ba4.dir\\Debug\\cmTC_20ba4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-j4b6lw/Debug/cmTC_20ba4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Image_registration/qt_viewer/build/CMakeFiles/CMakeScratch/TryCompile-j4b6lw/Debug/cmTC_20ba4.lib" /MACHINE:X64  /machine:x64 cmTC_20ba4.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_20ba4.vcxproj -> D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\Debug\\cmTC_20ba4.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_044f6.dir\\Debug\\cmTC_044f6.tlog\\unsuccessfulbuild".
-          Touching "cmTC_044f6.dir\\Debug\\cmTC_044f6.tlog\\cmTC_044f6.lastbuildstate".
-        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zupkp\\cmTC_044f6.vcxproj" (default targets).
+          Deleting file "cmTC_20ba4.dir\\Debug\\cmTC_20ba4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_20ba4.dir\\Debug\\cmTC_20ba4.tlog\\cmTC_20ba4.lastbuildstate".
+        Done Building Project "D:\\Image_registration\\qt_viewer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j4b6lw\\cmTC_20ba4.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.41
+        Time Elapsed 00:00:00.33
         
       exitCode: 0
   -
@@ -5626,6 +5742,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -5655,16 +5773,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5777,6 +5896,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -5806,16 +5927,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5943,6 +6065,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -5972,16 +6096,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -6106,6 +6231,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -6135,16 +6262,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -6266,6 +6394,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -6295,16 +6425,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -6426,6 +6557,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -6455,16 +6588,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -6888,6 +7022,22 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "C:/ProgramData/chocolatey/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/qt6qmlcompilerplusprivatetools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/qt6qmlcompilerplusprivatetools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "C:/Users/VI3CATH/AppData/Local/Programs/Python/Python310/Scripts/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -6909,6 +7059,14 @@ events:
         reason: "no_exist"
       -
         path: "C:/Users/VI3CATH/AppData/Local/Programs/Microsoft VS Code/qt6qmlcompilerplusprivatetools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/VI3CATH/AppData/Roaming/npm/Qt6QmlCompilerPlusPrivateToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/VI3CATH/AppData/Roaming/npm/qt6qmlcompilerplusprivatetools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -7018,6 +7176,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -7047,16 +7207,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -7188,6 +7349,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -7217,16 +7380,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -7385,6 +7549,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -7414,16 +7580,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -7547,6 +7714,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -7576,16 +7745,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -7703,6 +7873,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -7732,16 +7904,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -7863,6 +8036,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -7892,16 +8067,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -8023,6 +8199,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -8052,16 +8230,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -8179,6 +8358,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -8208,16 +8389,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -8330,6 +8512,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -8359,16 +8543,17 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
   -
     kind: "find_package-v1"
     backtrace:
@@ -8481,6 +8666,8 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "D:\\Image_registration\\dev\\VTK-install\\bin"
         - "D:\\Image_registration\\dev\\ITK-install\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin"
@@ -8510,14 +8697,15 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Bin"
         - "C:\\Users\\VI3CATH\\.dotnet\\tools"
         - "C:\\Users\\VI3CATH\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\VI3CATH\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/QtTest"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtTest"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/QtTest"
+        - "C:/Program Files (x86)/QtTest"
 ...

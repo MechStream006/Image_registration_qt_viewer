@@ -32,11 +32,7 @@ static const RegionParameters REGION_TABLE[] =
 
     // ---- REGION_NEURO (index 1) --------------------------------
     // Stage 1: Phase Corr + ECC Euclidean (rigid skull alignment)
-    // Stage 2: MI + B-Spline FFD via ITK (replaces DIS optical flow)
-    //   - Mutual Information metric ignores iodine intensity changes
-    //   - B-Spline with 64px grid = smooth non-rigid correction
-    //   - 3-level multi-res pyramid for coarse-to-fine
-    //   - DIS deformable kept OFF (B-Spline replaces it)
+    // Stage 2: DIS optical flow with sigma=5.0
     {
         REGION_NEURO, "Neuro",
         /* eccMotionType   */ cv::MOTION_EUCLIDEAN,
@@ -44,12 +40,12 @@ static const RegionParameters REGION_TABLE[] =
         /* eccMaxIter      */ 300,
         /* eccEpsilon      */ 1e-6,
         /* usePhaseCorInit */ true,
-        /* useDeformable   */ false,
-        /* deformRegSigma  */ 0.0f,
-        /* useBSpline      */ true,
-        /* bsplineGridSpacing */ 64,
-        /* bsplineMaxIter     */ 200,
-        /* bsplineMultiResLvl */ 3
+        /* useDeformable   */ true,
+        /* deformRegSigma  */ 5.0f,
+        /* useBSpline      */ false,
+        /* bsplineGridSpacing */ 0,
+        /* bsplineMaxIter     */ 0,
+        /* bsplineMultiResLvl */ 0
     },
 
     // ---- REGION_CARDIAC (index 2) -----------------------------
